@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-size: 2rem;
+  background-color: pink;
+
+}
+
+body > div {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+body > div > header, nav, main, aside, footer {
+  background: #CCC;
+  border-radius: 10px;
+  margin: 7px;
+  padding: 25px;
+}
+
+body > div > header {
+  order: 1;
+  height: 100px;
+  flex: 0 1 100%;
+  background-color: purple;
+
+}
+
+body > div > nav {
+  order: 2;
+  flex: 0 1 200px;
+  background-color: green;
+}
+
+body > div > main {
+  order: 3;
+  min-height: 400px;
+  flex: 1;
+  background-color: red;
+
+}
+
+body > div > aside {
+  order: 4;
+  flex: 0 1 200px;
+  background-color: yellow;
+
+}
+
+body > div > footer {
+  order: 5;
+  height: 100px;
+  flex: 0 1 100%;
+  background-color: blue;
+
+
+}
